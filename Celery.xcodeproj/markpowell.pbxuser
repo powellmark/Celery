@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeArchitecturePreference = i386;
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 6E41A2D710A0DBCF000DC1DD /* Celery */;
+		activeSDKPreference = macosx10.6;
+		activeTarget = 8D1107260486CEB800E47090 /* Celery */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* Celery */,
+		);
+		breakpoints = (
+			6E16CC8A10A4A4EE0036EC02 /* TableArrayDelegate.m:43 */,
+			6E16CE7710A4D4760036EC02 /* CeleryUIController.m:106 */,
+		);
+		codeSenseManager = 6E41A2F110A0DBD2000DC1DD /* Code sense */;
+		executables = (
+			6E41A2D710A0DBCF000DC1DD /* Celery */,
+		);
+		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA23EDF0692099D00951B8B" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					237,
+					20,
+					236,
+					236,
+					238,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_IgnoreCountID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					797,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 279497792;
+			PBXWorkspaceStateSaveDate = 279497792;
+		};
+		perUserProjectItems = {
+			6E0FB88510A8CC46008134B4 /* PBXTextBookmark */ = 6E0FB88510A8CC46008134B4 /* PBXTextBookmark */;
+			6E0FB89310A8CE0A008134B4 /* PBXTextBookmark */ = 6E0FB89310A8CE0A008134B4 /* PBXTextBookmark */;
+			6E0FB89410A8CE0A008134B4 /* PBXTextBookmark */ = 6E0FB89410A8CE0A008134B4 /* PBXTextBookmark */;
+			6E0FB89510A8CE0A008134B4 /* PBXTextBookmark */ = 6E0FB89510A8CE0A008134B4 /* PBXTextBookmark */;
+			6E0FB8A510A8CF5F008134B4 /* PBXTextBookmark */ = 6E0FB8A510A8CF5F008134B4 /* PBXTextBookmark */;
+			6E7A56F910A87148008AC114 = 6E7A56F910A87148008AC114 /* PBXTextBookmark */;
+			6EA564A210A89574002AF347 = 6EA564A210A89574002AF347 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 6E41A2F010A0DBD2000DC1DD /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	6E0FB88510A8CC46008134B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77C8280C06725ACE000B614F /* Celery_AppDelegate.m */;
+		name = "Celery_AppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1532;
+		vrLoc = 0;
+	};
+	6E0FB89310A8CE0A008134B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6E41A2F410A0DC25000DC1DD /* CeleryUIController.h */;
+		name = "CeleryUIController.h: 25";
+		rLen = 0;
+		rLoc = 650;
+		rType = 0;
+		vrLen = 1130;
+		vrLoc = 0;
+	};
+	6E0FB89410A8CE0A008134B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6E41A2F510A0DC25000DC1DD /* CeleryUIController.m */;
+		rLen = 0;
+		rLoc = 9223372036854776009;
+		rType = 0;
+	};
+	6E0FB89510A8CE0A008134B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6E41A2F510A0DC25000DC1DD /* CeleryUIController.m */;
+		name = "CeleryUIController.m: 99";
+		rLen = 0;
+		rLoc = 2811;
+		rType = 0;
+		vrLen = 1644;
+		vrLoc = 1683;
+	};
+	6E0FB8A510A8CF5F008134B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6E41A2F510A0DC25000DC1DD /* CeleryUIController.m */;
+		name = "CeleryUIController.m: 124";
+		rLen = 0;
+		rLoc = 3902;
+		rType = 0;
+		vrLen = 1719;
+		vrLoc = 2544;
+	};
+	6E16CC8A10A4A4EE0036EC02 /* TableArrayDelegate.m:43 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 6E25CC2810A38A6A008A4750 /* TableArrayDelegate.m */;
+		functionName = "-tableView:objectValueForTableColumn:row:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 43;
+		location = Celery;
+		modificationTime = 279260361.49151;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	6E16CE7710A4D4760036EC02 /* CeleryUIController.m:106 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 6E41A2F510A0DC25000DC1DD /* CeleryUIController.m */;
+		functionName = "-performedMethodLoadForURL2:withResponseBody:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 106;
+		location = Celery;
+		modificationTime = 279260369.71778;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	6E25CB9910A37BD9008A4750 /* JSON.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1190, 816}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{1440, 857}";
+		};
+	};
+	6E25CB9A10A37BD9008A4750 /* NSObject+SBJSON.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1190, 1104}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{1972, 589}";
+		};
+	};
+	6E25CB9C10A37BD9008A4750 /* NSString+SBJSON.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1190, 944}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{496, 1830}";
+		};
+	};
+	6E25CB9D10A37BD9008A4750 /* NSString+SBJSON.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1190, 896}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{345, 1828}";
+		};
+	};
+	6E25CBA010A37BD9008A4750 /* SBJsonBase.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1190, 1424}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{1727, 631}";
+		};
+	};
+	6E25CBA110A37BD9008A4750 /* SBJsonBase.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1190, 1200}}";
+			sepNavSelRange = "{1681, 99}";
+			sepNavVisRange = "{1514, 501}";
+		};
+	};
+	6E25CC0F10A38929008A4750 /* TableArrayDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1129, 528}}";
+			sepNavSelRange = "{334, 0}";
+			sepNavVisRange = "{39, 717}";
+			sepNavWindowFrame = "{{7, 147}, {1129, 878}}";
+		};
+	};
+	6E25CC2810A38A6A008A4750 /* TableArrayDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1493, 1216}}";
+			sepNavSelRange = "{1604, 0}";
+			sepNavVisRange = "{1324, 287}";
+			sepNavWindowFrame = "{{612, 119}, {1129, 878}}";
+		};
+	};
+	6E25CCC010A39675008A4750 /* FoodData.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1129, 684}}";
+			sepNavSelRange = "{585, 0}";
+			sepNavVisRange = "{0, 591}";
+		};
+	};
+	6E25CCC110A39675008A4750 /* FoodData.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1129, 684}}";
+			sepNavSelRange = "{311, 0}";
+			sepNavVisRange = "{0, 317}";
+		};
+	};
+	6E41A2D710A0DBCF000DC1DD /* Celery */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Celery;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	6E41A2F010A0DBD2000DC1DD /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	6E41A2F110A0DBD2000DC1DD /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	6E41A2F410A0DC25000DC1DD /* CeleryUIController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1070, 765}}";
+			sepNavSelRange = "{650, 0}";
+			sepNavVisRange = "{0, 1130}";
+			sepNavWindowFrame = "{{15, 295}, {1129, 878}}";
+		};
+	};
+	6E41A2F510A0DC25000DC1DD /* CeleryUIController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1070, 2192}}";
+			sepNavSelRange = "{3902, 0}";
+			sepNavVisRange = "{2544, 1719}";
+			sepNavWindowFrame = "{{393, 83}, {1129, 878}}";
+		};
+	};
+	6E41A32710A0DFFC000DC1DD /* FatSecretManager.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1129, 457}}";
+			sepNavSelRange = "{482, 32}";
+			sepNavVisRange = "{0, 581}";
+		};
+	};
+	6E41A32810A0DFFC000DC1DD /* FatSecretManager.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1129, 1312}}";
+			sepNavSelRange = "{2073, 0}";
+			sepNavVisRange = "{1834, 867}";
+			sepNavWindowFrame = "{{15, 295}, {1129, 878}}";
+		};
+	};
+	6E7A56F910A87148008AC114 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77C8280C06725ACE000B614F /* Celery_AppDelegate.m */;
+		name = "Celery_AppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1532;
+		vrLoc = 0;
+	};
+	6EA564A210A89574002AF347 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77C8280C06725ACE000B614F /* Celery_AppDelegate.m */;
+		name = "Celery_AppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1532;
+		vrLoc = 0;
+	};
+	77C8280C06725ACE000B614F /* Celery_AppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1055, 4464}}";
+			sepNavSelRange = "{175, 0}";
+			sepNavVisRange = "{0, 2168}";
+			sepNavWindowFrame = "{{9, 52}, {1114, 1126}}";
+		};
+	};
+	797A78380DDCFADE0050D0C2 /* Celery Spotlight Importer */ = {
+		activeExec = 0;
+	};
+	8D1107260486CEB800E47090 /* Celery */ = {
+		activeExec = 0;
+		executables = (
+			6E41A2D710A0DBCF000DC1DD /* Celery */,
+		);
+	};
+}

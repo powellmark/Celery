@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F7446970DB6B7EA00F9684A /* MainMenu.xib */; };
+		6E25CBA610A37BD9008A4750 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E25CB9B10A37BD9008A4750 /* NSObject+SBJSON.m */; };
+		6E25CBA710A37BD9008A4750 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E25CB9D10A37BD9008A4750 /* NSString+SBJSON.m */; };
+		6E25CBA810A37BD9008A4750 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E25CB9F10A37BD9008A4750 /* SBJSON.m */; };
+		6E25CBA910A37BD9008A4750 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E25CBA110A37BD9008A4750 /* SBJsonBase.m */; };
+		6E25CBAA10A37BD9008A4750 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E25CBA310A37BD9008A4750 /* SBJsonParser.m */; };
+		6E25CBAB10A37BD9008A4750 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E25CBA510A37BD9008A4750 /* SBJsonWriter.m */; };
+		6E25CC2910A38A6A008A4750 /* TableArrayDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E25CC2810A38A6A008A4750 /* TableArrayDelegate.m */; };
+		6E25CCC210A39675008A4750 /* FoodData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E25CCC110A39675008A4750 /* FoodData.m */; };
+		6E41A2F610A0DC25000DC1DD /* CeleryUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E41A2F510A0DC25000DC1DD /* CeleryUIController.m */; };
+		6E41A32910A0DFFC000DC1DD /* FatSecretManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E41A32810A0DFFC000DC1DD /* FatSecretManager.m */; };
+		6E41A43010A0E8C9000DC1DD /* MPOAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E41A42F10A0E8C9000DC1DD /* MPOAuth.framework */; };
+		6E41A4AA10A0F36D000DC1DD /* MPOAuth.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E41A42F10A0E8C9000DC1DD /* MPOAuth.framework */; };
+		770B37ED0679A11B001EADE2 /* Celery_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 770B37EC0679A11B001EADE2 /* Celery_DataModel.xcdatamodel */; };
+		77C8280E06725ACE000B614F /* Celery_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C8280C06725ACE000B614F /* Celery_AppDelegate.m */; };
+		797A78450DDCFB3E0050D0C2 /* GetMetadataForFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 797A783F0DDCFB3E0050D0C2 /* GetMetadataForFile.c */; };
+		797A78480DDCFB3E0050D0C2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 797A78420DDCFB3E0050D0C2 /* main.c */; };
+		797A78490DDCFB3E0050D0C2 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 797A78440DDCFB3E0050D0C2 /* MySpotlightImporter.m */; };
+		797A784A0DDCFC070050D0C2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C82804067257F0000B614F /* CoreData.framework */; };
+		797A784B0DDCFC090050D0C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+		797A7AE20DDCFCE80050D0C2 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797A7AE10DDCFCE80050D0C2 /* CoreFoundation.framework */; };
+		797A7AE40DDCFCF40050D0C2 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797A7AE30DDCFCF40050D0C2 /* CoreServices.framework */; };
+		799CAA890DDE04C70030CB95 /* Celery.mdimporter in CopyFiles */ = {isa = PBXBuildFile; fileRef = 797A78390DDCFADE0050D0C2 /* Celery.mdimporter */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		790512FB0DDD0A100070760D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 797A78380DDCFADE0050D0C2;
+			remoteInfo = "Celery Spotlight Importer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6E41A47610A0ED8F000DC1DD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6E41A4AA10A0F36D000DC1DD /* MPOAuth.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7905130A0DDD0A660070760D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = ../Library/Spotlight;
+			dstSubfolderSpec = 7;
+			files = (
+				799CAA890DDE04C70030CB95 /* Celery.mdimporter in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2F7446980DB6B7EA00F9684A /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Celery_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Celery_Prefix.pch; sourceTree = "<group>"; };
+		6E25CB9910A37BD9008A4750 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		6E25CB9A10A37BD9008A4750 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		6E25CB9B10A37BD9008A4750 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		6E25CB9C10A37BD9008A4750 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		6E25CB9D10A37BD9008A4750 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		6E25CB9E10A37BD9008A4750 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		6E25CB9F10A37BD9008A4750 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		6E25CBA010A37BD9008A4750 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		6E25CBA110A37BD9008A4750 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		6E25CBA210A37BD9008A4750 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		6E25CBA310A37BD9008A4750 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		6E25CBA410A37BD9008A4750 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		6E25CBA510A37BD9008A4750 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		6E25CC0F10A38929008A4750 /* TableArrayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableArrayDelegate.h; sourceTree = "<group>"; };
+		6E25CC2810A38A6A008A4750 /* TableArrayDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableArrayDelegate.m; sourceTree = "<group>"; };
+		6E25CCC010A39675008A4750 /* FoodData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodData.h; sourceTree = "<group>"; };
+		6E25CCC110A39675008A4750 /* FoodData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodData.m; sourceTree = "<group>"; };
+		6E41A2F410A0DC25000DC1DD /* CeleryUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CeleryUIController.h; sourceTree = "<group>"; };
+		6E41A2F510A0DC25000DC1DD /* CeleryUIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CeleryUIController.m; sourceTree = "<group>"; };
+		6E41A32710A0DFFC000DC1DD /* FatSecretManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FatSecretManager.h; sourceTree = "<group>"; };
+		6E41A32810A0DFFC000DC1DD /* FatSecretManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FatSecretManager.m; sourceTree = "<group>"; };
+		6E41A42F10A0E8C9000DC1DD /* MPOAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MPOAuth.framework; sourceTree = "<group>"; };
+		6E41A48510A0EEB1000DC1DD /* test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "test-Info.plist"; sourceTree = "<group>"; };
+		770B37EC0679A11B001EADE2 /* Celery_DataModel.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Celery_DataModel.xcdatamodel; sourceTree = "<group>"; };
+		77C82804067257F0000B614F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		77C8280B06725ACE000B614F /* Celery_AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Celery_AppDelegate.h; sourceTree = "<group>"; };
+		77C8280C06725ACE000B614F /* Celery_AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Celery_AppDelegate.m; sourceTree = "<group>"; };
+		797A78390DDCFADE0050D0C2 /* Celery.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Celery.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		797A783F0DDCFB3E0050D0C2 /* GetMetadataForFile.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = GetMetadataForFile.c; sourceTree = "<group>"; };
+		797A78410DDCFB3E0050D0C2 /* Importer-Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; fileEncoding = 4; name = "Importer-Info.plist"; path = "Importer/Importer-Info.plist"; sourceTree = "<group>"; };
+		797A78420DDCFB3E0050D0C2 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		797A78430DDCFB3E0050D0C2 /* MySpotlightImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySpotlightImporter.h; sourceTree = "<group>"; };
+		797A78440DDCFB3E0050D0C2 /* MySpotlightImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
+		797A7AE10DDCFCE80050D0C2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = ../../../../../../../../../../../../System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<group>"; };
+		797A7AE30DDCFCF40050D0C2 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = ../../../../../../../../../../../../System/Library/Frameworks/CoreServices.framework; sourceTree = "<group>"; };
+		797A7AE70DDCFD2A0050D0C2 /* Importer Read Me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Importer Read Me.txt"; path = "Importer/Importer Read Me.txt"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Celery-Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; fileEncoding = 4; path = "Celery-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Celery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Celery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		797A78370DDCFADE0050D0C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797A784A0DDCFC070050D0C2 /* CoreData.framework in Frameworks */,
+				797A784B0DDCFC090050D0C2 /* Foundation.framework in Frameworks */,
+				797A7AE20DDCFCE80050D0C2 /* CoreFoundation.framework in Frameworks */,
+				797A7AE40DDCFCF40050D0C2 /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				6E41A43010A0E8C9000DC1DD /* MPOAuth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				797A783E0DDCFB3E0050D0C2 /* Importer */,
+				6E25CB9810A37BD8008A4750 /* JSON */,
+				77C8280B06725ACE000B614F /* Celery_AppDelegate.h */,
+				77C8280C06725ACE000B614F /* Celery_AppDelegate.m */,
+				6E41A2F410A0DC25000DC1DD /* CeleryUIController.h */,
+				6E41A2F510A0DC25000DC1DD /* CeleryUIController.m */,
+				6E41A32710A0DFFC000DC1DD /* FatSecretManager.h */,
+				6E41A32810A0DFFC000DC1DD /* FatSecretManager.m */,
+				6E25CC0F10A38929008A4750 /* TableArrayDelegate.h */,
+				6E25CC2810A38A6A008A4750 /* TableArrayDelegate.m */,
+				6E25CCC010A39675008A4750 /* FoodData.h */,
+				6E25CCC110A39675008A4750 /* FoodData.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E41A42F10A0E8C9000DC1DD /* MPOAuth.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				797A7AE30DDCFCF40050D0C2 /* CoreServices.framework */,
+				797A7AE10DDCFCE80050D0C2 /* CoreFoundation.framework */,
+				77C82804067257F0000B614F /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Celery.app */,
+				797A78390DDCFADE0050D0C2 /* Celery.mdimporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Celery */ = {
+			isa = PBXGroup;
+			children = (
+				7756732906782D8800D1FEB8 /* Models */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				797A7AE70DDCFD2A0050D0C2 /* Importer Read Me.txt */,
+				6E41A48510A0EEB1000DC1DD /* test-Info.plist */,
+			);
+			name = Celery;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Celery_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Celery-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				2F7446970DB6B7EA00F9684A /* MainMenu.xib */,
+				797A78410DDCFB3E0050D0C2 /* Importer-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E25CB9810A37BD8008A4750 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				6E25CB9910A37BD9008A4750 /* JSON.h */,
+				6E25CB9A10A37BD9008A4750 /* NSObject+SBJSON.h */,
+				6E25CB9B10A37BD9008A4750 /* NSObject+SBJSON.m */,
+				6E25CB9C10A37BD9008A4750 /* NSString+SBJSON.h */,
+				6E25CB9D10A37BD9008A4750 /* NSString+SBJSON.m */,
+				6E25CB9E10A37BD9008A4750 /* SBJSON.h */,
+				6E25CB9F10A37BD9008A4750 /* SBJSON.m */,
+				6E25CBA010A37BD9008A4750 /* SBJsonBase.h */,
+				6E25CBA110A37BD9008A4750 /* SBJsonBase.m */,
+				6E25CBA210A37BD9008A4750 /* SBJsonParser.h */,
+				6E25CBA310A37BD9008A4750 /* SBJsonParser.m */,
+				6E25CBA410A37BD9008A4750 /* SBJsonWriter.h */,
+				6E25CBA510A37BD9008A4750 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		7756732906782D8800D1FEB8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				770B37EC0679A11B001EADE2 /* Celery_DataModel.xcdatamodel */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		797A783E0DDCFB3E0050D0C2 /* Importer */ = {
+			isa = PBXGroup;
+			children = (
+				797A78420DDCFB3E0050D0C2 /* main.c */,
+				797A783F0DDCFB3E0050D0C2 /* GetMetadataForFile.c */,
+				797A78430DDCFB3E0050D0C2 /* MySpotlightImporter.h */,
+				797A78440DDCFB3E0050D0C2 /* MySpotlightImporter.m */,
+			);
+			path = Importer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		797A78380DDCFADE0050D0C2 /* Celery Spotlight Importer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 797A783D0DDCFADE0050D0C2 /* Build configuration list for PBXNativeTarget "Celery Spotlight Importer" */;
+			buildPhases = (
+				797A78350DDCFADE0050D0C2 /* Resources */,
+				797A78360DDCFADE0050D0C2 /* Sources */,
+				797A78370DDCFADE0050D0C2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Celery Spotlight Importer";
+			productName = "Celery Spotlight Importer";
+			productReference = 797A78390DDCFADE0050D0C2 /* Celery.mdimporter */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8D1107260486CEB800E47090 /* Celery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26FC0A840875C7B200E6366F /* Build configuration list for PBXNativeTarget "Celery" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				7905130A0DDD0A660070760D /* CopyFiles */,
+				6E41A47610A0ED8F000DC1DD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				790512FC0DDD0A100070760D /* PBXTargetDependency */,
+			);
+			name = Celery;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Celery;
+			productReference = 8D1107320486CEB800E47090 /* Celery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "Celery" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Celery */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Celery */,
+				797A78380DDCFADE0050D0C2 /* Celery Spotlight Importer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		797A78350DDCFADE0050D0C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		797A78360DDCFADE0050D0C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797A78450DDCFB3E0050D0C2 /* GetMetadataForFile.c in Sources */,
+				797A78480DDCFB3E0050D0C2 /* main.c in Sources */,
+				797A78490DDCFB3E0050D0C2 /* MySpotlightImporter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				77C8280E06725ACE000B614F /* Celery_AppDelegate.m in Sources */,
+				770B37ED0679A11B001EADE2 /* Celery_DataModel.xcdatamodel in Sources */,
+				6E41A2F610A0DC25000DC1DD /* CeleryUIController.m in Sources */,
+				6E41A32910A0DFFC000DC1DD /* FatSecretManager.m in Sources */,
+				6E25CBA610A37BD9008A4750 /* NSObject+SBJSON.m in Sources */,
+				6E25CBA710A37BD9008A4750 /* NSString+SBJSON.m in Sources */,
+				6E25CBA810A37BD9008A4750 /* SBJSON.m in Sources */,
+				6E25CBA910A37BD9008A4750 /* SBJsonBase.m in Sources */,
+				6E25CBAA10A37BD9008A4750 /* SBJsonParser.m in Sources */,
+				6E25CBAB10A37BD9008A4750 /* SBJsonWriter.m in Sources */,
+				6E25CC2910A38A6A008A4750 /* TableArrayDelegate.m in Sources */,
+				6E25CCC210A39675008A4750 /* FoodData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		790512FC0DDD0A100070760D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 797A78380DDCFADE0050D0C2 /* Celery Spotlight Importer */;
+			targetProxy = 790512FB0DDD0A100070760D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2F7446970DB6B7EA00F9684A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F7446980DB6B7EA00F9684A /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26FC0A850875C7B200E6366F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Celery_Prefix.pch;
+				INFOPLIST_FILE = "Celery-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Celery;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		26FC0A860875C7B200E6366F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Celery_Prefix.pch;
+				INFOPLIST_FILE = "Celery-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Celery;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		26FC0A890875C7B200E6366F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		26FC0A8A0875C7B200E6366F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+		797A783B0DDCFADE0050D0C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "Importer/Importer-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = Celery;
+				SDKROOT = "";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "i386 x86_64";
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Debug;
+		};
+		797A783C0DDCFADE0050D0C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "Importer/Importer-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = Celery;
+				SDKROOT = "";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "i386 x86_64";
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26FC0A840875C7B200E6366F /* Build configuration list for PBXNativeTarget "Celery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26FC0A850875C7B200E6366F /* Debug */,
+				26FC0A860875C7B200E6366F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "Celery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26FC0A890875C7B200E6366F /* Debug */,
+				26FC0A8A0875C7B200E6366F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		797A783D0DDCFADE0050D0C2 /* Build configuration list for PBXNativeTarget "Celery Spotlight Importer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797A783B0DDCFADE0050D0C2 /* Debug */,
+				797A783C0DDCFADE0050D0C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
