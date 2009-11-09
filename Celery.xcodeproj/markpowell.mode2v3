@@ -197,49 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>6E0FB89110A8CE0A008134B4</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>CeleryUIController.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>6E0FB89210A8CE0A008134B4</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>CeleryUIController.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>6E0FB8A510A8CF5F008134B4</string>
-						<key>history</key>
-						<array>
-							<string>6E0FB89310A8CE0A008134B4</string>
-							<string>6E0FB89410A8CE0A008134B4</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1129, 781}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>15 351 1129 822 0 0 1920 1178 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -319,7 +277,7 @@
 										</array>
 									</array>
 									<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-									<string>{{0, 24}, {349, 340}}</string>
+									<string>{{0, 0}, {349, 340}}</string>
 								</dict>
 								<key>PBXTopSmartGroupGIDs</key>
 								<array/>
@@ -478,8 +436,8 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>6E0FB88310A8CC46008134B4</string>
-				<string>6E0FB88410A8CC46008134B4</string>
+				<string>6E0FB8C210A8DB3F008134B4</string>
+				<string>6E0FB8C310A8DB3F008134B4</string>
 				<string>1C9437FD063B20B00039CFAC</string>
 				<string>1C9437FE063B20B00039CFAC</string>
 				<string>1C9437FF063B20B00039CFAC</string>
@@ -516,14 +474,8 @@
 	<integer>0</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>6E0FB8A610A8CF5F008134B4</string>
-		<string>6E0FB89D10A8CE0A008134B4</string>
-		<string>6E0FB89E10A8CE0A008134B4</string>
-		<string>1C530D54069F1CE1000CFCEE</string>
 		<string>1C530D52069F1CE1000CFCEE</string>
 		<string>/Users/markpowell/Documents/Programming/Cocoa/Celery/Celery.xcodeproj</string>
-		<string>6E0FB89110A8CE0A008134B4</string>
-		<string>1C530D5B069F1CE1000CFCEE</string>
 	</array>
 	<key>WindowString</key>
 	<string>1126 750 366 426 0 0 1920 1178 </string>
@@ -740,7 +692,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D52069F1CE1000CFCEE</string>
-				<string>6E0FB88610A8CC46008134B4</string>
+				<string>6E0FB8C410A8DB3F008134B4</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
