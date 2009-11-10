@@ -131,6 +131,7 @@
 		[restManager obtainNutritionInformationWithID:data.foodID forTarget:self forSelector:@selector(performedMethodLoadForURL2:withResponseBody:)];
 	} else {
 		[detailView setStringValue:selectedData.detailedDescription];
+		[searching stopAnimation:self];
 	}	
 }
 	 
