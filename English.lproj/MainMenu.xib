@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">1060</int>
-		<string key="IBDocument.SystemVersion">10B504</string>
+		<string key="IBDocument.SystemVersion">10C540</string>
 		<string key="IBDocument.InterfaceBuilderVersion">732</string>
-		<string key="IBDocument.AppKitVersion">1038.2</string>
-		<string key="IBDocument.HIToolboxVersion">437.00</string>
+		<string key="IBDocument.AppKitVersion">1038.25</string>
+		<string key="IBDocument.HIToolboxVersion">458.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			<string key="NS.object.0">732</string>
@@ -472,6 +472,8 @@
 								<reference key="NSTextColor" ref="228319257"/>
 								<int key="NSVisibleItemCount">5</int>
 								<bool key="NSHasVerticalScroller">YES</bool>
+								<bool key="NSUsesDataSource">YES</bool>
+								<nil key="NSDataSource"/>
 								<reference key="NSDelegate" ref="616450458"/>
 								<object class="NSComboTableView" key="NSTableView" id="923993453">
 									<reference key="NSNextResponder"/>
@@ -524,7 +526,6 @@
 									<string key="NSAction">tableViewAction:</string>
 									<int key="NSTvFlags">-767524864</int>
 									<reference key="NSDelegate" ref="754903479"/>
-									<reference key="NSDataSource" ref="754903479"/>
 									<reference key="NSTarget" ref="754903479"/>
 									<int key="NSColumnAutoresizingStyle">1</int>
 									<int key="NSDraggingSourceMaskForLocal">15</int>
@@ -533,6 +534,7 @@
 									<int key="NSTableViewDraggingDestinationStyle">0</int>
 								</object>
 							</object>
+							<nil key="NSDataSource"/>
 						</object>
 						<object class="NSProgressIndicator" id="937820216">
 							<reference key="NSNextResponder" ref="823886803"/>
@@ -2341,6 +2343,14 @@
 					</object>
 					<int key="connectionID">596</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">dataSource</string>
+						<reference key="source" ref="616450458"/>
+						<reference key="destination" ref="640651411"/>
+					</object>
+					<int key="connectionID">598</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -3700,9 +3710,9 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<integer value="1"/>
-					<string>{{326, 52}, {710, 804}}</string>
+					<string>{{-66, -3}, {710, 804}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{326, 52}, {710, 804}}</string>
+					<string>{{-66, -3}, {710, 804}}</string>
 					<integer value="1"/>
 					<integer value="1"/>
 					<integer value="1"/>
@@ -3720,7 +3730,7 @@
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
-					<string>{{609, 1007}, {410, 20}}</string>
+					<string>{{609, 707}, {410, 20}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3874,7 +3884,7 @@
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
-					<string>{{685, 934}, {176, 73}}</string>
+					<string>{{685, 634}, {176, 73}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3897,7 +3907,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">597</int>
+			<int key="maxID">598</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

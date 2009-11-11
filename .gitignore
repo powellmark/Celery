@@ -97,3 +97,6 @@ build/Debug/Celery.app/Contents/Resources/English.lproj/InfoPlist.strings
 build/Debug/Celery.app/Contents/Resources/English.lproj/MainMenu.nib
 build/Debug/Celery.mdimporter/Contents/Info.plist
 build/Debug/Celery.mdimporter/Contents/MacOS/Celery
+build/Celery.build/Debug/Celery.build/Objects-normal/i386/ServingComboDelegate.o
+build/Celery.build/Debug/Celery.build/Objects-normal/i386/ServingComboDelegate.o~>
+build/Celery.build/Debug/Celery.build/Objects-normal/i386/ServingComboDelegate.o~?

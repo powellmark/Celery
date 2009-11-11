@@ -14,13 +14,13 @@
 	NSString* foodName;
 	NSString* brandName;
 	NSString* shortDescription;
-	NSString* detailedDescription;
+	NSArray* detailedDescription;
 }
 
 @property (nonatomic, assign) int foodID;
 @property (nonatomic, retain) NSString* foodName;
 @property (nonatomic, retain) NSString* brandName;
 @property (nonatomic, retain) NSString* shortDescription;
-@property (nonatomic, retain) NSString* detailedDescription;
+@property (nonatomic, retain) NSArray* detailedDescription;
 
 @end

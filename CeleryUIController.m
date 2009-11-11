@@ -12,55 +12,67 @@
 @implementation CeleryUIController
 
 - (IBAction)searchForFood:(id)sender {
-	[searching startAnimation:self];
-	if(!restManager) {
-		restManager = [[FatSecretManager alloc] init];
-		[restManager authenticateWithServer];
+	if(!updating) {
+		updating = YES;
+		[searching startAnimation:self];
+		if(!restManager) {
+			restManager = [[FatSecretManager alloc] init];
+			[restManager authenticateWithServer];
+			[servingCombo setDataSource:self];
+			[servingCombo setDelegate:self];
+		}
+	
+		currentPage = 0;
+		maxPages = 0;
+	
+		[restManager searchForFoodWithString:[inputText stringValue] forTarget:self forSelector:@selector(performedMethodLoadForURL:withResponseBody:) pageNumber:currentPage];
 	}
-	
-	currentPage = 0;
-	maxPages = 0;
-	
-	[restManager searchForFoodWithString:[inputText stringValue] forTarget:self forSelector:@selector(performedMethodLoadForURL:withResponseBody:) pageNumber:currentPage];
 }
 
 - (IBAction) nextPage:(id)sender {
-	[searching startAnimation:self];
-	if(!restManager) {
-		restManager = [[FatSecretManager alloc] init];
-		[restManager authenticateWithServer];
+	if(!updating) {
+		updating = YES;
+	
+		[searching startAnimation:self];
+		if(!restManager) {
+			restManager = [[FatSecretManager alloc] init];
+			[restManager authenticateWithServer];
+		}
+	
+		if(![prevButton isEnabled]) {
+			[prevButton setEnabled:YES];
+		}
+	
+		currentPage++;
+		if(currentPage == maxPages) {
+			[nextButton setEnabled:NO];
+		} 
+	
+		[restManager searchForFoodWithString:[inputText stringValue] forTarget:self forSelector:@selector(performedMethodLoadForURL:withResponseBody:) pageNumber:currentPage];
 	}
-	
-	if(![prevButton isEnabled]) {
-		[prevButton setEnabled:YES];
-	}
-	
-	currentPage++;
-	if(currentPage == maxPages) {
-		[nextButton setEnabled:NO];
-	} 
-	
-	[restManager searchForFoodWithString:[inputText stringValue] forTarget:self forSelector:@selector(performedMethodLoadForURL:withResponseBody:) pageNumber:currentPage];
 	
 }
 
 - (IBAction) prevPage:(id)sender {
-	[searching startAnimation:self];
-	if(!restManager) {
-		restManager = [[FatSecretManager alloc] init];
-		[restManager authenticateWithServer];
+	if(!updating) {
+		updating = YES;
+		[searching startAnimation:self];
+		if(!restManager) {
+			restManager = [[FatSecretManager alloc] init];
+			[restManager authenticateWithServer];
+		}
+	
+		if(![nextButton isEnabled]) {
+			[nextButton setEnabled:YES];
+		}
+	
+		currentPage--;
+		if(currentPage == 0) {
+			[prevButton setEnabled:NO];
+		} 
+	
+		[restManager searchForFoodWithString:[inputText stringValue] forTarget:self forSelector:@selector(performedMethodLoadForURL:withResponseBody:) pageNumber:currentPage];
 	}
-	
-	if(![nextButton isEnabled]) {
-		[nextButton setEnabled:YES];
-	}
-	
-	currentPage--;
-	if(currentPage == 0) {
-		[prevButton setEnabled:NO];
-	} 
-	
-	[restManager searchForFoodWithString:[inputText stringValue] forTarget:self forSelector:@selector(performedMethodLoadForURL:withResponseBody:) pageNumber:currentPage];
 }
 	 
 - (void)performedMethodLoadForURL:(NSURL *)inMethod withResponseBody:(NSString *)inResponseBody {
@@ -73,7 +85,13 @@
 	
 	[countLabel setStringValue:[NSString stringWithFormat:@"%i/%i", currentPage, maxPages]];
 	
-	NSArray* foods = (NSArray*)[foodDict objectForKey:@"food"];
+	id tempFoods = [foodDict objectForKey:@"food"];
+	NSArray* foods = nil;
+	if([tempFoods isKindOfClass:[NSDictionary class]]) {
+		foods = [[NSArray alloc] initWithObjects:tempFoods,nil];
+	} else {
+		foods = (NSArray*)tempFoods;
+	}
 	
 	if(!foodData) {
 		foodData = [[TableArrayDelegate alloc] init];
@@ -99,6 +117,7 @@
 	
 	[displayTable reloadData];
 	[searching stopAnimation:self];
+	updating = NO;
 }
 
 - (void)performedMethodLoadForURL2:(NSURL *)inMethod withResponseBody:(NSString *)inResponseBody {
@@ -113,26 +132,70 @@
 	} else {
 		servingList = (NSArray*)tempServing;
 	}
+	
+	
+	
 	NSDictionary* serving = [servingList objectAtIndex:0];
 	NSString* name = [dict objectForKey:@"food_name"];
+	[self displayDetailForServing:serving forFoodNamed:name];
+	
+	selectedData.detailedDescription = servingList;
+	
+	[searching stopAnimation:self];
+	updating = NO;
+}
+
+- (void) displayDetailForServing:(NSDictionary*) serving forFoodNamed:(NSString*) name {
+	
 	NSString* servDescrip = [serving objectForKey:@"serving_description"];
 	NSString* description = [NSString stringWithFormat:@"Name: %@\nServing:%@\nCalories:%@\nFat:%@\nSugar:%@", name, 
 							 servDescrip, [serving objectForKey:@"calories"], [serving objectForKey:@"fat"], [serving objectForKey:@"sugar"]];
-	
-	selectedData.detailedDescription = description;
-	[detailView setStringValue:selectedData.detailedDescription];
-	[searching stopAnimation:self];
+	[detailView setStringValue:description];
 }
 
 - (void)foodSelected:(FoodData *)data {
-	[searching startAnimation:self];
-	selectedData = data;
-	if(!data.detailedDescription) {
-		[restManager obtainNutritionInformationWithID:data.foodID forTarget:self forSelector:@selector(performedMethodLoadForURL2:withResponseBody:)];
-	} else {
-		[detailView setStringValue:selectedData.detailedDescription];
-		[searching stopAnimation:self];
-	}	
+	if(!updating) {
+		updating = YES;
+	
+		[searching startAnimation:self];
+	
+		selectedData = data;
+		if(!data.detailedDescription) {
+			[restManager obtainNutritionInformationWithID:data.foodID forTarget:self forSelector:@selector(performedMethodLoadForURL2:withResponseBody:)];
+		} else {
+			NSDictionary* serving = [selectedData.detailedDescription objectAtIndex:0];
+			[self displayDetailForServing:serving forFoodNamed:data.foodName];
+			[searching stopAnimation:self];
+			updating = NO;
+		}
+	}
 }
-	 
+
+- (NSInteger)numberOfItemsInComboBox:(NSComboBox *)aComboBox {
+	
+	return [selectedData.detailedDescription count];
+}
+- (id)comboBox:(NSComboBox *)aComboBox objectValueForItemAtIndex:(NSInteger)index {
+	NSDictionary * data = [selectedData.detailedDescription objectAtIndex:index];
+	return [data objectForKey:@"serving_description"];
+}
+
+- (void)comboBoxWillPopUp:(NSNotification *)notification {
+	
+}
+- (void)comboBoxWillDismiss:(NSNotification *)notification {
+	
+}
+- (void)comboBoxSelectionDidChange:(NSNotification *)notification {
+	NSComboBox* box = (NSComboBox*)[notification object];
+	int index = [box indexOfSelectedItem];
+
+	NSDictionary* serving = [selectedData.detailedDescription objectAtIndex:index];
+	[self displayDetailForServing:serving forFoodNamed:selectedData.foodName];
+	
+}
+- (void)comboBoxSelectionIsChanging:(NSNotification *)notification {
+	
+}	 
+
 @end

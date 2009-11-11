@@ -13,7 +13,7 @@
 #import "FoodData.h"
 
 //testing git
-@interface CeleryUIController : NSObject <FoodListening> {
+@interface CeleryUIController : NSObject <FoodListening, NSComboBoxDataSource, NSComboBoxDelegate> {
 
 	IBOutlet NSTextField *inputText;
 	IBOutlet NSTableView *displayTable;
@@ -33,6 +33,8 @@
 	
 	int currentPage;
 	int maxPages;
+	
+	BOOL updating;
 }
 
 - (IBAction)searchForFood:(id)sender;
@@ -40,6 +42,13 @@
 - (void)performedMethodLoadForURL2:(NSURL *)inMethod withResponseBody:(NSString *)inResponseBody;
 - (IBAction) nextPage:(id)sender;
 - (IBAction) prevPage:(id)sender;
-- (void)foodSelected:(FoodData *)data;
+- (void) foodSelected:(FoodData *)data;
+- (void) displayDetailForServing:(NSDictionary*) serving forFoodNamed:(NSString*) name;
+- (NSInteger)numberOfItemsInComboBox:(NSComboBox *)aComboBox;
+- (id)comboBox:(NSComboBox *)aComboBox objectValueForItemAtIndex:(NSInteger)index;
+- (void)comboBoxWillPopUp:(NSNotification *)notification;
+- (void)comboBoxWillDismiss:(NSNotification *)notification;
+- (void)comboBoxSelectionDidChange:(NSNotification *)notification;
+- (void)comboBoxSelectionIsChanging:(NSNotification *)notification;
 
 @end
