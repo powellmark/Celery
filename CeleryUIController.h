@@ -13,17 +13,43 @@
 #import "FoodData.h"
 
 //testing git
-@interface CeleryUIController : NSObject <FoodListening, NSComboBoxDataSource, NSComboBoxDelegate> {
-
-	IBOutlet NSTextField *inputText;
+@interface CeleryUIController : NSObject <FoodListening, NSComboBoxDataSource, NSComboBoxDelegate, NSTextFieldDelegate> {
+	IBOutlet NSWindow *myParentWindow;
 	IBOutlet NSTableView *displayTable;
 	IBOutlet NSTextField *detailView;
-	IBOutlet NSButton *addButton;
 	IBOutlet NSTextField *countLabel;
 	IBOutlet NSButton *nextButton;
 	IBOutlet NSButton *prevButton;
 	IBOutlet NSComboBox *servingCombo;
 	IBOutlet NSProgressIndicator *searching;
+	IBOutlet NSTextField* searchField;
+	IBOutlet NSDrawer* infoDrawer;
+	IBOutlet NSView* infoView;
+	
+	IBOutlet NSTextField* servingSizeLabel;
+	IBOutlet NSTextField* servingsUnitLabel;
+	IBOutlet NSTextField* servingsPerLabel;
+	
+	IBOutlet NSTextField* caloriesLabel;
+	IBOutlet NSTextField* caloriesFromFatLabel;
+	IBOutlet NSTextField* totalFatLabel;
+	IBOutlet NSTextField* totalFatPercentLabel;
+	IBOutlet NSTextField* saturatedFatLabel;
+	IBOutlet NSTextField* saturatedFatPercentLabel;
+	IBOutlet NSTextField* cholesterolLabel;
+	IBOutlet NSTextField* cholesterolPercentLabel;
+	IBOutlet NSTextField* sodiumLabel;
+	IBOutlet NSTextField* sodiumPercentLabel;
+	IBOutlet NSTextField* totalCarbohydrateLabel;
+	IBOutlet NSTextField* totalCarbohydratePercentLabel;
+	IBOutlet NSTextField* dietaryFiberLabel;
+	IBOutlet NSTextField* dietaryFiberPercentLabel;
+	IBOutlet NSTextField* sugarsLabel;
+	IBOutlet NSTextField* proteinLabel;
+	IBOutlet NSTextField* vitaminAPercentLabel;
+	IBOutlet NSTextField* vitaminCPercentLabel;
+	IBOutlet NSTextField* calciumLabel;
+	IBOutlet NSTextField* ironLabel;
 	
 	FatSecretManager* restManager;
 	
@@ -45,7 +71,7 @@
 - (void) foodSelected:(FoodData *)data;
 - (void) displayDetailForServing:(NSDictionary*) serving forFoodNamed:(NSString*) name;
 - (NSInteger)numberOfItemsInComboBox:(NSComboBox *)aComboBox;
-- (id)comboBox:(NSComboBox *)aComboBox objectValueForItemAtIndex:(NSInteger)index;
+- (id)comboBox:(NSComboBox *)aComboBox objectValueForItemAtIndex:(NSInteger)itemIndex;
 - (void)comboBoxWillPopUp:(NSNotification *)notification;
 - (void)comboBoxWillDismiss:(NSNotification *)notification;
 - (void)comboBoxSelectionDidChange:(NSNotification *)notification;
